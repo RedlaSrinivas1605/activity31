@@ -13,7 +13,7 @@ def soil():
     print(value)
     value=int(value)
     response=predict_model(value)
-    return {'msg':response}
+    return {'msg':str(response)}
 
 if __name__=="__main__":
     app.run('0.0.0.0',port=5001)
